@@ -1,5 +1,6 @@
 package com.taskboard
 
+import com.taskboard.plugins.configureDatabases
 import com.taskboard.plugins.configureHTTP
 import com.taskboard.plugins.configureMonitoring
 import com.taskboard.plugins.configureRouting
@@ -15,5 +16,6 @@ fun Application.module() {
     configureHTTP()
     configureSerialization()
     configureStatusPages()
+    configureDatabases()
     configureRouting()
 }
