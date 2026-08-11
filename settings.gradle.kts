@@ -1,0 +1,12 @@
+rootProject.name = "taskboard-api"
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+    versionCatalogs {
+        create("ktorLibs") {
+            from("io.ktor:ktor-version-catalog:3.5.1")
+        }
+    }
+}

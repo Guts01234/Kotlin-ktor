@@ -1,0 +1,9 @@
+.gradle
+build
+.git
+.idea
+.vscode
+.kotlin
+*.iml
+.env
+local.properties
