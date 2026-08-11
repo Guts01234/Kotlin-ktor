@@ -1,5 +1,7 @@
 package com.taskboard
 
+import com.taskboard.di.configureDependencies
+import com.taskboard.plugins.configureAuthentication
 import com.taskboard.plugins.configureDatabases
 import com.taskboard.plugins.configureHTTP
 import com.taskboard.plugins.configureMonitoring
@@ -17,5 +19,7 @@ fun Application.module() {
     configureSerialization()
     configureStatusPages()
     configureDatabases()
+    configureDependencies()
+    configureAuthentication()
     configureRouting()
 }

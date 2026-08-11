@@ -27,9 +27,12 @@ dependencies {
     implementation(ktorLibs.server.defaultHeaders)
     implementation(ktorLibs.server.compression)
     implementation(ktorLibs.server.doubleReceive)
+    implementation(ktorLibs.server.auth)
+    implementation(ktorLibs.server.auth.jwt)
 
     implementation(libs.logback.classic)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.bcrypt)
 
     implementation(libs.exposed.core)
     implementation(libs.exposed.dao)
